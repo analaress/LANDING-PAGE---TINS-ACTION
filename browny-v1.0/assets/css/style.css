@@ -1,0 +1,508 @@
+/*==================================
+* Author        : "ThemeSine"
+* Template Name :  Browny  HTML TemFlate
+* Version       : 1.0
+==================================== */
+
+/*==================================
+font-family: 'Poppins', sans-serif;
+==================================== */
+
+
+/*=========== TABLE OF CONTENTS ===========
+1.  General css (Reset code)
+2.  Header
+3.  Welcome-hero
+4.  About me 
+5.  Education
+6.  Skill
+7.  Experience
+8.  Profiles
+9.  Portfolio
+10. Clients
+11. Contact
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #6a708e;
+	font-size:16px;
+	padding:0;
+}
+h2,h4,h5,h6 { 
+	margin: 0;
+	color:#43485c;
+    font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+    .agenda-vertical {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .why_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h1 {
+    color:#0069FF
+}
+
+h2 {
+    margin-top: 50px;
+}
+h3 {
+    color: #fff;
+}
+p {
+	line-height:1.8;
+	color:#43485c;
+	font-size:14px;
+	font-family: 'Poppins', sans-serif;
+}
+img{border:none; max-width: 100%;}
+imgg{border:none; width: 60%;}
+
+
+
+html,body{
+    height: 100%;
+	position: relative;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s 0.3s ease; 
+  -moz-transition: opacity 0.3s 0.3s ease; 
+  -ms-transition: opacity 0.3s 0.3s ease; 
+  -o-transition: opacity 0.3s 0.3s ease; 
+  transition: opacity 0.3s 0.3s ease; 
+  opacity: 0;
+}
+
+.fix{position: relative;clear: both;}
+/*=============Style css=========*/
+
+/*-------------------------------------
+        2. Header
+--------------------------------------*/
+.top-area {
+    position: relative;
+    z-index: 9999;
+}
+
+/*.menu-ui-design*/
+.menu-ui-design{overflow-y:scroll;height: 350px;}
+.menu-ui-design::-webkit-scrollbar {
+    width:5px;
+}
+.menu-ui-design::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px #000;
+}
+.menu-ui-design::-webkit-scrollbar-thumb {
+  background-color: #0069FF;
+}
+/*.menu-ui-design*/
+
+
+/*-------------------------------------
+        3.  Welcome-hero
+--------------------------------------*/
+
+
+.welcome-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background:url(../images/negocios.png)no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:890px;
+    width: 100%;
+    color: #0069FF;
+}
+
+
+.welcome-hero before {
+    position:absolute;
+    content: " ";
+    top: 0;
+    left:0;
+    height:100%;
+}
+
+/*.header-text-area*/
+.header-text h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.header-text h2 span {color: #0069FF;}
+.header-text p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+}
+.header-text a {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #0069FF;
+    border:1px solid #0069FF;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+
+.header-text a:hover{ color:#0069FF; box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#fff;border: 1px solid #fff;}
+/*.header-text-area*/
+
+/*-------------------------------------
+        4.  About
+--------------------------------------*/
+.about-content {padding-top: 45px; padding-block: 45px;}
+/*.single-about-txt*/
+.single-about-txt h3 {
+    font-size:18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.single-about-txt p {
+    font-size: 16px;
+    color: #999fb3;
+    padding-left: 10px;
+    
+}
+
+
+/*.single-about-img */
+.single-about-img{position: relative;}
+.single-about-img:before {
+    position:  absolute;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.single-about-img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-self: center;
+    text-align: justify;
+
+}
+
+/*.ab-list-icon */
+
+/*.single-about-img */
+
+/*-------------------------------------
+        5.  Education
+--------------------------------------*/
+
+.agenda {
+    background: #f5f5f5 ;
+    padding-block-end: 50px ;
+    padding-top: 10px;
+}
+
+.agenda-horizontal-timeline {
+    padding-top: 80px ;
+  
+}
+
+/*.education-horizontal-timeline*/
+.agenda-horizontal-timeline .col-sm-4 {padding:0 2px;}
+
+.single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
+.single-horizontal-timeline .experience-time h3 span{text-transform:lowercase; padding-left: 50px;}
+.single-horizontal-timeline .timeline-content h5 {margin: 5px 0;}
+.single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
+
+/*.timeline-horizontal-border*/
+.timeline-horizontal-border {
+    display:  flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+.timeline-horizontal-border i {
+    font-size:  10px;
+    color: #FFD740;
+    margin-right:  5px;
+}
+span.single-timeline-horizontal {
+    display:  inline-block;
+    background: #b2c1ce;
+    height:  1px;
+    width: 380px;
+}
+span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
+/*.timeline-horizontal-border*/
+
+/*.education-horizontal-timeline*/
+
+
+
+/*-------------------------------------
+        7. Experience
+-------------------------------------*/
+.experience {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+.experience-content {padding-top: 100px;}
+.single-timeline-box {margin-bottom: 75px;}
+
+/*experience-time*/
+.experience-time {
+    position: relative;
+}
+.experience-time h2 {
+    font-weight: 400;
+}
+.experience-time h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #636a82;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+/*experience-time*/
+
+/*main-timeline*/
+.main-timeline{
+    position: relative;
+}
+.main-timeline:before{
+    content: "";
+    width: 2px;
+    height: 84%;
+    background: #b2c1ce;
+    position: absolute;
+    top: 1.5%;
+    left: 45.8%;
+    z-index: -1;
+}
+.main-timeline .timeline{
+    position: relative;
+}
+
+.timeline-content span>i, .experience-time span>i {
+    color: #0069FF;
+    position: absolute;
+    font-size: 10px;
+    left: -14.5%;
+    z-index: 1;
+}
+.timeline-content h4.title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.timeline-content h5 {
+    color: #636a82;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 18px 0 20px;
+}
+.main-timeline .description {
+    font-size: 14px;
+    color: #999fb3;
+}
+.main-timeline .timeline-content.right{
+    float: right;
+    text-align: left;
+}
+.timeline-single-before:before {
+    content: '';
+    top: 57px;
+    left: -3px;
+    position: absolute;
+    width: 100%;
+    height:400px;
+    border-left:15px solid #fff;
+}
+
+.experience-time-responsive{display: none;}
+/*-------------------------------------
+        8. Profiles
+--------------------------------------*/
+
+
+.organizacao-details {padding-block: 10px;}    
+
+.organizacao-details .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+.container {
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/*===============================
+    Scroll Top
+===============================*/
+#scroll-Top  .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background:#0069FF;
+	border:1px solid #0069FF;
+	border-radius:50%;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+	z-index: 2;
+}
+#scroll-Top  .return-to-top:hover {
+    background:#fff;
+    color: #0069FF;
+	border:1px solid #0069FF;
+}
+
+#scroll-Top  .return-to-top i{
+    position:relative;
+    bottom:0;
+
+}
+
+#scroll-Top  .return-to-top i{
+    position: relative;
+    animation-name: example;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+}
+@keyframes example {
+    0%   {bottom:0px;}
+    100%  {bottom:7px;}
+}
+
+.why_section .box {
+    width: 50%;
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; 
+    align-items: center;
+
+  }
+  
+  .why_section .box .img-box {
+    min-width: 120px;
+    min-height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .why_section .box .img-box img {
+    max-width: 250px;
+  }
+  
+  .why_section .box h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .why_section .box p {
+    margin-bottom: 0;
+    margin-block: 45px;
+  }
+  
+  .why_section .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 45px;
+  }
+  
+  
+  
+  
+/*========================Thank you=================
