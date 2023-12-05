@@ -54,10 +54,10 @@ a,a:hover,a:active,a:focus {
 	font-size:16px;
 	padding:0;
 }
-h2,h4,h5,h6 { 
+h1,h4,h5,h6 { 
 	margin: 0;
 	color:#43485c;
-    font-size: 30px;
+    font-size: 22px;
 	font-family: 'Poppins', sans-serif;
 	text-transform: capitalize;
 }
@@ -76,11 +76,15 @@ h2,h4,h5,h6 {
 }
 
 h1 {
-    color:#0069FF
+    color: #0069FF
+    
+    
 }
 
 h2 {
     margin-top: 50px;
+    font-size: 35px;
+    color: #43485c;
 }
 h3 {
     color: #fff;
@@ -91,8 +95,12 @@ p {
 	font-size:14px;
 	font-family: 'Poppins', sans-serif;
 }
+
+.detail-box p {
+    margin: 15px;
+}
+
 img{border:none; max-width: 100%;}
-imgg{border:none; width: 60%;}
 
 
 
@@ -147,7 +155,7 @@ html,body{
     background:url(../images/negocios.png)no-repeat;
     background-size:cover;
     background-position: center;
-    height:890px;
+    height: 850px;
     width: 100%;
     color: #0069FF;
 }
@@ -159,6 +167,13 @@ html,body{
     top: 0;
     left:0;
     height:100%;
+}
+
+.section-countdown {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 /*.header-text-area*/
@@ -374,8 +389,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 --------------------------------------*/
 
 
-.organizacao-details {padding-block: 10px;}    
-
 .organizacao-details .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -388,13 +401,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 200px;
   }
 
-.container {
-    flex-direction: row;
-    padding-left: 40px;
-    padding-right: 40px;
-}
 
 
 /*===============================
@@ -411,8 +423,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-align: center;
     font-size: 20px;
     cursor: pointer;
-    color: #fff;
-    background:#0069FF;
+    color: #0069FF;
+    background:c;
 	border:1px solid #0069FF;
 	border-radius:50%;
 	-webkit-transition: .5s; 
@@ -465,8 +477,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   }
   
   .why_section .box .img-box {
-    min-width: 120px;
-    min-height: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
